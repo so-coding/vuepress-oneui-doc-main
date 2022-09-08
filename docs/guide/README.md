@@ -24,8 +24,10 @@ Vue.use(OneUI)
 ```
 ### 按需引入
 ``` js
-import OneUI from 'one-ui-element'
-Vue.use(OneUI)
+import { Button } from 'one-ui-element'
+// 引入字体
+import 'one-ui-element/lib/fonts/style.css'   
+Vue.use(Button)
 ```
 
 
@@ -34,4 +36,20 @@ Vue.use(OneUI)
 - babel-plugin-component
 ``` js
 npm install babel-plugin-component -D
+```
+- Babel 配置
+``` js
+plugins: [
+    [
+      "component",
+      {
+        libraryName: "one-ui-element",
+        // 是否解析名称为破折号模式
+        camel2Dash: false,
+        // import js and css from 'style.css'
+        style: true,
+      },
+      "one-ui-element",
+    ],
+  ],
 ```

@@ -75,7 +75,7 @@
       }
     },
 		methods: {
-      click() {
+      clicks() {
         alert('aaaa')
       }
     }

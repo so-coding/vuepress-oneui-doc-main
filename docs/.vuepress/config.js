@@ -33,7 +33,17 @@ module.exports = {
   head: [],
   plugins: [
     'demo-container',
+    '@vuepress/back-to-top',
+    '@vuepress/active-header-links',
     ['vuepress-plugin-code-copy', true],
+    [
+      'cursor-effects',
+      {
+        size: 2, // size of the particle, default: 2
+        shape: 'star', // ['star' | 'circle'], // shape of the particle, default: 'star'
+        zIndex: 999999999 // z-index property of the canvas, default: 999999999
+      }
+    ],
   ],
   markdown: {}
 }
