@@ -1,7 +1,7 @@
 module.exports = {
   theme: '',
   title: 'VuePress + VueUI',
-  description: 'VuePress搭建VueUI的组件库文档教程示例代码', 
+  description: 'VuePress搭建VueUI的组件库文档教程示例代码',
   base: '/',
   port: '8080',
   themeConfig: {
@@ -11,6 +11,10 @@ module.exports = {
         link: '/'
       },
       {
+        text: '指导',
+        link: '/guide/'
+      },
+      {
         text: '组件',
         link: '/comps/'
       }
@@ -18,11 +22,18 @@ module.exports = {
     sidebar: {
       '/comps/': [
         '/comps/',
-        '/comps/select.md'
+        '/comps/select.md',
+        '/comps/button.md'
+      ],
+      '/guide/': [
+        '/guide/'
       ]
     }
   },
   head: [],
-  plugins: ['demo-container'],
+  plugins: [
+    'demo-container',
+    ['vuepress-plugin-code-copy', true],
+  ],
   markdown: {}
 }
