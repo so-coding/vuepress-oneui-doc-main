@@ -10,4 +10,5 @@ features:
   details: Vue2基础上完成，可全局按需引入
 - title: 轻量
   details: 通过配置webpack打包，体积小巧
+footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
