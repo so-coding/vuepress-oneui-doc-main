@@ -1,0 +1,15 @@
+// 由于复制功能撑大了盒子
+.code-copy {
+  height: 0px;
+}
+// 设置复制图标的大小
+.code-copy svg {
+  width: 18px;
+  height: 18px;
+}
+// 隐藏代码块的滚动条
+.language-js::-webkit-scrollbar { width: 0 !important }
+// 禁止代码块内容滚动
+.theme-default-content pre, .theme-default-content pre[class*="language-"] {
+    overflow: hidden;
+}

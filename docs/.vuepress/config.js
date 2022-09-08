@@ -1,7 +1,7 @@
 module.exports = {
   theme: '',
-  title: 'VuePress + Element',
-  description: 'VuePress搭建Element的组件库文档教程示例代码',
+  title: 'VuePress + VueUI',
+  description: 'VuePress搭建VueUI的组件库文档教程示例代码', 
   base: '/',
   port: '8080',
   themeConfig: {
