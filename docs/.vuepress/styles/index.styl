@@ -1,9 +1,12 @@
 // 由于复制功能撑大了盒子
 .code-copy {
+  display: relative;
   height: 0px;
 }
 // 设置复制图标的大小
 .code-copy svg {
+  display: absolute;
+  bottom: 10px;
   width: 18px;
   height: 18px;
 }
@@ -16,3 +19,50 @@
 .theme-default-content.custom {
   display: none;
 }
+
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+  font-size: 14px;
+  margin-bottom: 45px;
+  line-height: 1.5em;
+  display: table;
+  border-spacing: 2px;
+  border-color: grey;
+  background: #fff;
+  strong {
+    font-weight: normal;
+  }
+  tr {
+    border-top: none;
+  }
+  tr:nth-child(2n) {
+    background-color: #fff;
+  } 
+  td, th {
+    border: none;
+    border-bottom: 0.5px solid #dcdfe6;
+    padding: 15px;
+    max-width: 250px;
+    
+  }
+
+  th {
+    text-align: left;
+    white-space: nowrap;
+    color: #909399;
+    font-weight: normal;
+  }
+
+  td {
+    color: #606266;
+  }
+
+  th:first-child, td:first-child {
+    padding-left: 10px;
+  }
+}
+

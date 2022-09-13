@@ -20,6 +20,7 @@ yarn add one-ui-element -S
 ### 全局引入
 ``` js
 import OneUI from 'one-ui-element'
+import 'one-ui-element/lib/style.css'
 Vue.use(OneUI)
 ```
 ### 按需引入
@@ -32,7 +33,7 @@ Vue.use(Button)
 
 
 ### 配置
-按需引入的项目需要安装如下任意一个插件，进行配置
+按需引入的项目需要安装如下插件，进行配置
 - babel-plugin-component
 ``` js
 npm install babel-plugin-component -D
